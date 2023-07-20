@@ -1,0 +1,24 @@
+{
+  "version": 1,
+  "paths": {
+    "/todo": {
+      "name": "/todo",
+      "lambdaFunction": "amplifyapirest8bb3e739",
+      "permissions": {
+        "setting": "protected",
+        "auth": [
+          "create",
+          "read",
+          "update",
+          "delete"
+        ],
+        "guest": [
+          "create",
+          "read",
+          "update",
+          "delete"
+        ]
+      }
+    }
+  }
+}
