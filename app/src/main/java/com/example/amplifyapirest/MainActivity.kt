@@ -11,6 +11,8 @@ class MainActivity : AppCompatActivity() {
     private lateinit var edtName: EditText
     private lateinit var btnPost: Button
     private lateinit var btnGet: Button
+    private lateinit var btnPut: Button
+    private lateinit var btnDelete: Button
 
     private val api by lazy {
         ApiRestHelper()
@@ -23,6 +25,8 @@ class MainActivity : AppCompatActivity() {
         edtName = findViewById(R.id.edt_name)
         btnPost = findViewById(R.id.btn_post)
         btnGet = findViewById(R.id.btn_get)
+        btnPut = findViewById(R.id.btn_put)
+        btnDelete = findViewById(R.id.btn_delete)
 
         btnPost.setOnClickListener {
             api.postTodoItem(
@@ -33,6 +37,16 @@ class MainActivity : AppCompatActivity() {
 
         btnGet.setOnClickListener {
             api.getTodo(::handleFinish)
+        }
+
+        btnPut.setOnClickListener {
+            api.putTodo(
+                name = edtName.text.toString(),
+                callback = ::handleFinish)
+        }
+
+        btnDelete.setOnClickListener {
+            api.deleteTodo(::handleFinish)
         }
     }
 

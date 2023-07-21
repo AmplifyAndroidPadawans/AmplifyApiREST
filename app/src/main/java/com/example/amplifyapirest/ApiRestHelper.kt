@@ -49,4 +49,35 @@ class ApiRestHelper {
             }
         )
     }
+
+    fun putTodo(
+        name:String,
+        date:String = SimpleDateFormat("dd-MM-yyyy HH:mm").format(Date()),
+        callback: (isCompleted: Boolean) -> Unit) {
+        val request = RestOptions.builder()
+            .addPath("/todo/1")
+            .addBody("{\"name\":\"$name\", \"date\":\"$date\"}".toByteArray())
+            .build()
+
+        Amplify.API.put(request,
+            { response ->
+                Log.i("ApiRestHelper", "PUT succeeded: ${String(response.data.rawBytes)}")
+                callback(true)},
+            {   Log.e("ApiRestHelper", "PUT failed", it)
+                callback(false)}
+        )
+    }
+    fun deleteTodo(callback: (isCompleted: Boolean) -> Unit){
+        val options = RestOptions.builder()
+            .addPath("/todo/1")
+            .build()
+
+        Amplify.API.delete(options,
+            { response ->
+                Log.i("ApiRestHelper", "DELETE succeeded: ${String(response.data.rawBytes)}")
+                callback(true)},
+            {   Log.e("ApiRestHelper", "DELETE failed.", it)
+                callback(false)}
+        )
+    }
 }

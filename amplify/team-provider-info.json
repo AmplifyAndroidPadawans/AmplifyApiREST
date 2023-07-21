@@ -1,22 +1,22 @@
 {
   "dev": {
     "awscloudformation": {
-      "AuthRoleName": "amplify-amplifyapirest-dev-133541-authRole",
-      "UnauthRoleArn": "arn:aws:iam::812258505236:role/amplify-amplifyapirest-dev-133541-unauthRole",
-      "AuthRoleArn": "arn:aws:iam::812258505236:role/amplify-amplifyapirest-dev-133541-authRole",
+      "AuthRoleName": "amplify-amplifyapirest-dev-152039-authRole",
+      "UnauthRoleArn": "arn:aws:iam::217147543020:role/amplify-amplifyapirest-dev-152039-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::217147543020:role/amplify-amplifyapirest-dev-152039-authRole",
       "Region": "us-east-2",
-      "DeploymentBucketName": "amplify-amplifyapirest-dev-133541-deployment",
-      "UnauthRoleName": "amplify-amplifyapirest-dev-133541-unauthRole",
-      "StackName": "amplify-amplifyapirest-dev-133541",
-      "StackId": "arn:aws:cloudformation:us-east-2:812258505236:stack/amplify-amplifyapirest-dev-133541/9e296640-2734-11ee-9ef8-0234d0776eab",
-      "AmplifyAppId": "du4tlv81htbh0",
-      "APIGatewayAuthURL": "https://s3.amazonaws.com/amplify-amplifyapirest-dev-133541-deployment/amplify-cfn-templates/api/APIGatewayAuthStack.json"
+      "DeploymentBucketName": "amplify-amplifyapirest-dev-152039-deployment",
+      "UnauthRoleName": "amplify-amplifyapirest-dev-152039-unauthRole",
+      "StackName": "amplify-amplifyapirest-dev-152039",
+      "StackId": "arn:aws:cloudformation:us-east-2:217147543020:stack/amplify-amplifyapirest-dev-152039/47e81bf0-2743-11ee-acab-06f00c6825cb",
+      "AmplifyAppId": "d3k5a13coemteb",
+      "APIGatewayAuthURL": "https://s3.amazonaws.com/amplify-amplifyapirest-dev-152039-deployment/amplify-cfn-templates/api/APIGatewayAuthStack.json"
     },
     "categories": {
       "function": {
-        "amplifyapirest8bb3e739": {
-          "deploymentBucketName": "amplify-amplifyapirest-dev-133541-deployment",
-          "s3Key": "amplify-builds/amplifyapirest8bb3e739-3458435147566e593950-build.zip"
+        "amplifyapirest18bfb335": {
+          "deploymentBucketName": "amplify-amplifyapirest-dev-152039-deployment",
+          "s3Key": "amplify-builds/amplifyapirest18bfb335-797362376b537974774d-build.zip"
         }
       },
       "auth": {

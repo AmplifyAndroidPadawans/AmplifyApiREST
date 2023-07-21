@@ -8,7 +8,7 @@
             "Arn"
           ],
           "category": "function",
-          "resourceName": "amplifyapirest8bb3e739"
+          "resourceName": "amplifyapirest18bfb335"
         }
       ],
       "providerPlugin": "awscloudformation",
@@ -42,26 +42,26 @@
     }
   },
   "function": {
-    "amplifyapirest8bb3e739": {
+    "amplifyapirest18bfb335": {
       "build": true,
       "providerPlugin": "awscloudformation",
       "service": "Lambda"
     }
   },
   "parameters": {
-    "AMPLIFY_function_amplifyapirest8bb3e739_deploymentBucketName": {
+    "AMPLIFY_function_amplifyapirest18bfb335_deploymentBucketName": {
       "usedBy": [
         {
           "category": "function",
-          "resourceName": "amplifyapirest8bb3e739"
+          "resourceName": "amplifyapirest18bfb335"
         }
       ]
     },
-    "AMPLIFY_function_amplifyapirest8bb3e739_s3Key": {
+    "AMPLIFY_function_amplifyapirest18bfb335_s3Key": {
       "usedBy": [
         {
           "category": "function",
-          "resourceName": "amplifyapirest8bb3e739"
+          "resourceName": "amplifyapirest18bfb335"
         }
       ]
     }

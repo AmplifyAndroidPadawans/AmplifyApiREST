@@ -3,7 +3,7 @@
   "paths": {
     "/todo": {
       "name": "/todo",
-      "lambdaFunction": "amplifyapirest8bb3e739",
+      "lambdaFunction": "amplifyapirest18bfb335",
       "permissions": {
         "setting": "protected",
         "auth": [
